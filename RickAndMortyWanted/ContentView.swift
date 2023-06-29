@@ -7,53 +7,52 @@
 
 import SwiftUI
 
+enum TabTitle: String {
+    case RECORDS = "Records"
+    case WANTED = "Wanted"
+    case LOCATIONS = "Locations"
+}
+
 struct ContentView: View {
-    @State var selection = 1
+    @State var selection = 2
+    
+    private var navigationTitle: String {
+        switch selection {
+        case 1:
+            return TabTitle.RECORDS.rawValue
+        case 2:
+            return TabTitle.WANTED.rawValue
+        case 3:
+            return TabTitle.LOCATIONS.rawValue
+        default:
+            return ""
+        }
+    }
     
     var body: some View {
         NavigationView {
             TabView(selection: $selection) {
                 RecordsView()
                     .tabItem {
-                        Label("Records", systemImage:"tv.inset.filled")
-                    }
+                        Label(TabTitle.RECORDS.rawValue, systemImage:"tv.inset.filled")
+                    }.tag(1)
                 WantedView()
                     .tabItem {
-                        Label("Wanted", systemImage:"person.fill")
-                    }
+                        Label(TabTitle.WANTED.rawValue, systemImage:"person.fill")
+                    }.tag(2)
                 LocationsView()
                     .tabItem {
-                        Label("Locations", systemImage:"globe.americas.fill")
-                    }.tag(1)
+                        Label(TabTitle.LOCATIONS.rawValue, systemImage:"globe.americas.fill")
+                    }.tag(3)
             }
-            .navigationTitle(selection == 1 ? "First" : "Second") // << here !!
+            .navigationTitle(navigationTitle)
         }
     }
 }
 
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-    }
-}
-
-struct LocationsView: View {
-    var body: some View {
-        Text("Locations")
-            .font(.title)
-    }
-}
-
-struct WantedView: View {
-    var body: some View {
-        Text("Wanted")
-            .font(.title)
-    }
-}
-
-struct RecordsView: View {
-    var body: some View {
-        Text("Records")
-            .font(.title)
     }
 }
