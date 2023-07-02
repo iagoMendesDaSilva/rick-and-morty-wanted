@@ -27,6 +27,8 @@
 		177658FF2A4A14B00072C367 /* RickAndMortyWantedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177658FE2A4A14B00072C367 /* RickAndMortyWantedTests.swift */; };
 		177659092A4A14B00072C367 /* RickAndMortyWantedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177659082A4A14B00072C367 /* RickAndMortyWantedUITests.swift */; };
 		1776590B2A4A14B00072C367 /* RickAndMortyWantedUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1776590A2A4A14B00072C367 /* RickAndMortyWantedUITestsLaunchTests.swift */; };
+		17919E772A59DFAA00C5EE60 /* WantedListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17919E762A59DFAA00C5EE60 /* WantedListItem.swift */; };
+		17919E792A59DFB800C5EE60 /* WantedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17919E782A59DFB800C5EE60 /* WantedList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		177659042A4A14B00072C367 /* RickAndMortyWantedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RickAndMortyWantedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		177659082A4A14B00072C367 /* RickAndMortyWantedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyWantedUITests.swift; sourceTree = "<group>"; };
 		1776590A2A4A14B00072C367 /* RickAndMortyWantedUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyWantedUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		17919E762A59DFAA00C5EE60 /* WantedListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WantedListItem.swift; sourceTree = "<group>"; };
+		17919E782A59DFB800C5EE60 /* WantedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WantedList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,9 +104,9 @@
 		1728B35B2A4DF70B0094F1F8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				1728B35C2A4DF7280094F1F8 /* LocationsView.swift */,
-				1728B3602A4DF74E0094F1F8 /* RecordsView.swift */,
-				1728B35E2A4DF73C0094F1F8 /* WantedView.swift */,
+				17919E732A59DDE300C5EE60 /* records */,
+				17919E722A59DDC800C5EE60 /* locations */,
+				17919E712A59DDBB00C5EE60 /* wanted */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -196,6 +200,40 @@
 				1776590A2A4A14B00072C367 /* RickAndMortyWantedUITestsLaunchTests.swift */,
 			);
 			path = RickAndMortyWantedUITests;
+			sourceTree = "<group>";
+		};
+		17919E712A59DDBB00C5EE60 /* wanted */ = {
+			isa = PBXGroup;
+			children = (
+				17919E742A59DDF600C5EE60 /* components */,
+				1728B35E2A4DF73C0094F1F8 /* WantedView.swift */,
+			);
+			path = wanted;
+			sourceTree = "<group>";
+		};
+		17919E722A59DDC800C5EE60 /* locations */ = {
+			isa = PBXGroup;
+			children = (
+				1728B35C2A4DF7280094F1F8 /* LocationsView.swift */,
+			);
+			path = locations;
+			sourceTree = "<group>";
+		};
+		17919E732A59DDE300C5EE60 /* records */ = {
+			isa = PBXGroup;
+			children = (
+				1728B3602A4DF74E0094F1F8 /* RecordsView.swift */,
+			);
+			path = records;
+			sourceTree = "<group>";
+		};
+		17919E742A59DDF600C5EE60 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				17919E762A59DFAA00C5EE60 /* WantedListItem.swift */,
+				17919E782A59DFB800C5EE60 /* WantedList.swift */,
+			);
+			path = components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,6 +370,7 @@
 				1728B3642A4DFA510094F1F8 /* WantedViewModel.swift in Sources */,
 				1728B35F2A4DF73C0094F1F8 /* WantedView.swift in Sources */,
 				1728B3612A4DF74E0094F1F8 /* RecordsView.swift in Sources */,
+				17919E792A59DFB800C5EE60 /* WantedList.swift in Sources */,
 				177658F02A4A149F0072C367 /* ContentView.swift in Sources */,
 				1728B3712A4DFDFF0094F1F8 /* Episode.swift in Sources */,
 				1728B3752A4DFE430094F1F8 /* CharacterLocation.swift in Sources */,
@@ -340,6 +379,7 @@
 				1728B36F2A4DFDBF0094F1F8 /* CharacterStatus.swift in Sources */,
 				1728B37C2A4E036E0094F1F8 /* Endpoints.swift in Sources */,
 				1728B36D2A4DFD910094F1F8 /* CharacterGender.swift in Sources */,
+				17919E772A59DFAA00C5EE60 /* WantedListItem.swift in Sources */,
 				1728B37E2A4E05C70094F1F8 /* CharacterList.swift in Sources */,
 				1728B3732A4DFE290094F1F8 /* Location.swift in Sources */,
 				1728B36B2A4DFD680094F1F8 /* Character.swift in Sources */,

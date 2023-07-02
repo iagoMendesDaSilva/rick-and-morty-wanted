@@ -13,8 +13,20 @@ final class Api {
         static let baseUrl = "https://rickandmortyapi.com/api/"
     }
     
-    static func request<T: Codable>(endpoint: Endpoints, type: T.Type, completion: @escaping (Result<T, Error>) -> Void) {
-        let urlEndpoint = Constants.baseUrl.appending(endpoint.rawValue)
+    static func request<T: Codable>(endpoint: Endpoints, type: T.Type, queryParameters: [URLQueryItem] = [], completion: @escaping (Result<T, Error>) -> Void) {
+        
+        var urlEndpoint = Constants.baseUrl.appending(endpoint.rawValue)
+        
+        if !queryParameters.isEmpty {
+            urlEndpoint += "?"
+            let argumentString = queryParameters.compactMap({
+                guard let value = $0.value else { return nil }
+                return "\($0.name)=\(value)"
+            }).joined(separator: "&")
+
+            urlEndpoint += argumentString
+        }
+        
         guard let url = URL(string: urlEndpoint) else {
             let error = NSError(domain: urlEndpoint, code: 0, userInfo: [NSLocalizedDescriptionKey: "Invalid URL"])
             completion(.failure(error))
