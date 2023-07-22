@@ -14,20 +14,15 @@ struct WantedView: View {
     
     var body: some View {
         VStack{
-            TextField("Search Wanted", text: $search).onChange(of: search){
-                viewModel.filterCharacters(name: $0)
-            }
-            .padding()
-            .background(Color(UIColor.secondarySystemBackground))
-            .frame(maxWidth: .infinity, maxHeight: 40)
-            .cornerRadius(10)
-            .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
-            if(viewModel.characters.isEmpty && !search.isEmpty){
+            Search(placeHolder: "Search Wanted",search: $search, onPress: { name in
+                viewModel.filterCharacters(name: name)
+            })
+            if(viewModel.charactersFiltered.isEmpty && !search.isEmpty){
                 Text("No Wanted Found")
                     .frame(maxWidth: .infinity,  maxHeight: .infinity, alignment: .center)
                     .foregroundColor(Color(UIColor.secondaryLabel))
             }else{
-                WantedList(viewModel:viewModel, onRefresh: onRefresh)
+                WantedList(viewModel:viewModel,isFiltered: !search.isEmpty, onRefresh: onRefresh)
             }
         }.frame(
             maxWidth: .infinity,
@@ -41,12 +36,10 @@ struct WantedView: View {
         viewModel.getCharacters()
     }
     
-    
-    struct WantedView_Previews: PreviewProvider {
-        static var previews: some View {
-            WantedView()
-        }
-    }
-    
 }
 
+struct WantedView_Previews: PreviewProvider {
+    static var previews: some View {
+        WantedView()
+    }
+}

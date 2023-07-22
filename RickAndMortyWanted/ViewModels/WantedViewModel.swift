@@ -11,6 +11,7 @@ import SwiftUI
 class WantedViewModel: ObservableObject {
     
     @Published var characters: [Character] = []
+    @Published var charactersFiltered: [Character] = []
     private var currentPage = 1
     
     init() {
@@ -19,17 +20,15 @@ class WantedViewModel: ObservableObject {
     
     func filterCharacters(name: String){
         if(name.isEmpty){
-            getCharacters()
-            return
+            self.charactersFiltered =  characters
+        }else{
+            self.charactersFiltered =  characters.filter { $0.name.lowercased().contains(name.lowercased()) }
         }
-        
-        let filteredCharacters = characters.filter { $0.name.lowercased().contains(name.lowercased()) }
-        characters = filteredCharacters
     }
-    
+
     func getCharacters(loadMore: Bool = false) {
         self.currentPage = loadMore ?  self.currentPage + 1 : 1
-        Api.request(endpoint: .CHARACTER, type: CharacterList.self, queryParameters: [URLQueryItem(name: "page", value: String(self.currentPage))]) { result in
+        Api.request(endpoint: .CHARACTER, type: ResponseList<Character>.self, queryParameters: [URLQueryItem(name: "page", value: String(self.currentPage))]) { result in
             switch result {
             case .success(let data):
                 DispatchQueue.main.async {

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CharacterList: Codable {
+struct ResponseList<T: Codable>: Codable {
     struct Info: Codable {
         let count: Int
         let pages: Int
@@ -16,5 +16,5 @@ struct CharacterList: Codable {
     }
 
     let info: Info
-    let results: [Character]
+    let results: [T]
 }

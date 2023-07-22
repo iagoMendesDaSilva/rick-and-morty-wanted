@@ -10,5 +10,5 @@ import Foundation
 @frozen enum Endpoints: String, CaseIterable, Hashable {
     case CHARACTER = "character"
     case LOCATION = "location"
-    case EPISODE = "locations"
+    case EPISODE = "episode"
 }

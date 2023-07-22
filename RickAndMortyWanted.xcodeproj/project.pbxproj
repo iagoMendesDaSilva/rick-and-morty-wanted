@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1727CD4D2A6D56CF00140FCF /* RecordsListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1727CD4C2A6D56CF00140FCF /* RecordsListItem.swift */; };
+		1727CD4F2A6D570B00140FCF /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1727CD4E2A6D570B00140FCF /* SectionHeader.swift */; };
 		1728B35D2A4DF7280094F1F8 /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1728B35C2A4DF7280094F1F8 /* LocationsView.swift */; };
 		1728B35F2A4DF73C0094F1F8 /* WantedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1728B35E2A4DF73C0094F1F8 /* WantedView.swift */; };
 		1728B3612A4DF74E0094F1F8 /* RecordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1728B3602A4DF74E0094F1F8 /* RecordsView.swift */; };
@@ -19,7 +21,7 @@
 		1728B3752A4DFE430094F1F8 /* CharacterLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1728B3742A4DFE430094F1F8 /* CharacterLocation.swift */; };
 		1728B37A2A4E00AC0094F1F8 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1728B3792A4E00AC0094F1F8 /* Api.swift */; };
 		1728B37C2A4E036E0094F1F8 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1728B37B2A4E036E0094F1F8 /* Endpoints.swift */; };
-		1728B37E2A4E05C70094F1F8 /* CharacterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1728B37D2A4E05C70094F1F8 /* CharacterList.swift */; };
+		1728B37E2A4E05C70094F1F8 /* ResponseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1728B37D2A4E05C70094F1F8 /* ResponseList.swift */; };
 		177658EE2A4A149F0072C367 /* RickAndMortyWantedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177658ED2A4A149F0072C367 /* RickAndMortyWantedApp.swift */; };
 		177658F02A4A149F0072C367 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177658EF2A4A149F0072C367 /* ContentView.swift */; };
 		177658F22A4A14AF0072C367 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 177658F12A4A14AF0072C367 /* Assets.xcassets */; };
@@ -29,6 +31,10 @@
 		1776590B2A4A14B00072C367 /* RickAndMortyWantedUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1776590A2A4A14B00072C367 /* RickAndMortyWantedUITestsLaunchTests.swift */; };
 		17919E772A59DFAA00C5EE60 /* WantedListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17919E762A59DFAA00C5EE60 /* WantedListItem.swift */; };
 		17919E792A59DFB800C5EE60 /* WantedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17919E782A59DFB800C5EE60 /* WantedList.swift */; };
+		17D365A52A6C16B200F239F0 /* RecordsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D365A42A6C16B200F239F0 /* RecordsViewModel.swift */; };
+		17D365A72A6C18D100F239F0 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D365A62A6C18D100F239F0 /* Search.swift */; };
+		17D365AA2A6C1FBF00F239F0 /* RecordsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D365A92A6C1FBF00F239F0 /* RecordsList.swift */; };
+		17D365AC2A6C461A00F239F0 /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D365AB2A6C461A00F239F0 /* Season.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1727CD4C2A6D56CF00140FCF /* RecordsListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsListItem.swift; sourceTree = "<group>"; };
+		1727CD4E2A6D570B00140FCF /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
 		1728B35C2A4DF7280094F1F8 /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
 		1728B35E2A4DF73C0094F1F8 /* WantedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WantedView.swift; sourceTree = "<group>"; };
 		1728B3602A4DF74E0094F1F8 /* RecordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsView.swift; sourceTree = "<group>"; };
@@ -61,7 +69,7 @@
 		1728B3742A4DFE430094F1F8 /* CharacterLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterLocation.swift; sourceTree = "<group>"; };
 		1728B3792A4E00AC0094F1F8 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		1728B37B2A4E036E0094F1F8 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
-		1728B37D2A4E05C70094F1F8 /* CharacterList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterList.swift; sourceTree = "<group>"; };
+		1728B37D2A4E05C70094F1F8 /* ResponseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseList.swift; sourceTree = "<group>"; };
 		177658EA2A4A149E0072C367 /* RickAndMortyWanted.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMortyWanted.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		177658ED2A4A149F0072C367 /* RickAndMortyWantedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyWantedApp.swift; sourceTree = "<group>"; };
 		177658EF2A4A149F0072C367 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -74,6 +82,10 @@
 		1776590A2A4A14B00072C367 /* RickAndMortyWantedUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyWantedUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		17919E762A59DFAA00C5EE60 /* WantedListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WantedListItem.swift; sourceTree = "<group>"; };
 		17919E782A59DFB800C5EE60 /* WantedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WantedList.swift; sourceTree = "<group>"; };
+		17D365A42A6C16B200F239F0 /* RecordsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsViewModel.swift; sourceTree = "<group>"; };
+		17D365A62A6C18D100F239F0 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		17D365A92A6C1FBF00F239F0 /* RecordsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsList.swift; sourceTree = "<group>"; };
+		17D365AB2A6C461A00F239F0 /* Season.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Season.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,12 +113,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1727CD4B2A6D56A000140FCF /* components */ = {
+			isa = PBXGroup;
+			children = (
+				17D365A92A6C1FBF00F239F0 /* RecordsList.swift */,
+				1727CD4E2A6D570B00140FCF /* SectionHeader.swift */,
+				1727CD4C2A6D56CF00140FCF /* RecordsListItem.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
 		1728B35B2A4DF70B0094F1F8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				17919E732A59DDE300C5EE60 /* records */,
 				17919E722A59DDC800C5EE60 /* locations */,
 				17919E712A59DDBB00C5EE60 /* wanted */,
+				17D365A62A6C18D100F239F0 /* Search.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -115,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				1728B3632A4DFA510094F1F8 /* WantedViewModel.swift */,
+				17D365A42A6C16B200F239F0 /* RecordsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -132,9 +156,10 @@
 			isa = PBXGroup;
 			children = (
 				1728B36A2A4DFD680094F1F8 /* Character.swift */,
-				1728B37D2A4E05C70094F1F8 /* CharacterList.swift */,
+				1728B37D2A4E05C70094F1F8 /* ResponseList.swift */,
 				1728B36E2A4DFDBF0094F1F8 /* CharacterStatus.swift */,
 				1728B3702A4DFDFF0094F1F8 /* Episode.swift */,
+				17D365AB2A6C461A00F239F0 /* Season.swift */,
 				1728B3742A4DFE430094F1F8 /* CharacterLocation.swift */,
 				1728B3722A4DFE290094F1F8 /* Location.swift */,
 				1728B36C2A4DFD910094F1F8 /* CharacterGender.swift */,
@@ -222,6 +247,7 @@
 		17919E732A59DDE300C5EE60 /* records */ = {
 			isa = PBXGroup;
 			children = (
+				1727CD4B2A6D56A000140FCF /* components */,
 				1728B3602A4DF74E0094F1F8 /* RecordsView.swift */,
 			);
 			path = records;
@@ -369,6 +395,8 @@
 				1728B35D2A4DF7280094F1F8 /* LocationsView.swift in Sources */,
 				1728B3642A4DFA510094F1F8 /* WantedViewModel.swift in Sources */,
 				1728B35F2A4DF73C0094F1F8 /* WantedView.swift in Sources */,
+				17D365A52A6C16B200F239F0 /* RecordsViewModel.swift in Sources */,
+				1727CD4F2A6D570B00140FCF /* SectionHeader.swift in Sources */,
 				1728B3612A4DF74E0094F1F8 /* RecordsView.swift in Sources */,
 				17919E792A59DFB800C5EE60 /* WantedList.swift in Sources */,
 				177658F02A4A149F0072C367 /* ContentView.swift in Sources */,
@@ -377,12 +405,16 @@
 				1728B37A2A4E00AC0094F1F8 /* Api.swift in Sources */,
 				177658EE2A4A149F0072C367 /* RickAndMortyWantedApp.swift in Sources */,
 				1728B36F2A4DFDBF0094F1F8 /* CharacterStatus.swift in Sources */,
+				17D365A72A6C18D100F239F0 /* Search.swift in Sources */,
 				1728B37C2A4E036E0094F1F8 /* Endpoints.swift in Sources */,
 				1728B36D2A4DFD910094F1F8 /* CharacterGender.swift in Sources */,
 				17919E772A59DFAA00C5EE60 /* WantedListItem.swift in Sources */,
-				1728B37E2A4E05C70094F1F8 /* CharacterList.swift in Sources */,
+				1728B37E2A4E05C70094F1F8 /* ResponseList.swift in Sources */,
 				1728B3732A4DFE290094F1F8 /* Location.swift in Sources */,
+				17D365AA2A6C1FBF00F239F0 /* RecordsList.swift in Sources */,
+				17D365AC2A6C461A00F239F0 /* Season.swift in Sources */,
 				1728B36B2A4DFD680094F1F8 /* Character.swift in Sources */,
+				1727CD4D2A6D56CF00140FCF /* RecordsListItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

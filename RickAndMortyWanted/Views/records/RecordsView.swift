@@ -8,8 +8,32 @@
 import SwiftUI
 
 struct RecordsView: View {
+    
+    @State private var search: String = ""
+    @ObservedObject var viewModel = RecordsViewModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            Search(placeHolder: "Search Records",search: $search, onPress: { name in
+                viewModel.filterRecord(name: name)
+            })
+            if(viewModel.recordsFiltered.isEmpty && !search.isEmpty){
+                Text("No Record Found")
+                    .frame(maxWidth: .infinity,  maxHeight: .infinity, alignment: .center)
+                    .foregroundColor(Color(UIColor.secondaryLabel))
+            }else{
+                RecordsList(viewModel:viewModel,isFiltered: !search.isEmpty, onRefresh: onRefresh)
+            }
+        }.frame(
+            maxWidth: .infinity,
+            maxHeight: .infinity,
+            alignment: .topLeading
+        )
+    }
+    
+    func onRefresh(){
+        search = ""
+        viewModel.getRecords()
     }
 }
 
