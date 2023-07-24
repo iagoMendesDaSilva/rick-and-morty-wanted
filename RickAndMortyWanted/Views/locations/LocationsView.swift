@@ -8,8 +8,32 @@
 import SwiftUI
 
 struct LocationsView: View {
+    
+    @State private var search: String = ""
+    @ObservedObject var viewModel = LocationsViewModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            Search(placeHolder: "Search Locations",search: $search, onPress: { name in
+                viewModel.filterLocation(name: name)
+            })
+            if(viewModel.locationsFiltered.isEmpty && !search.isEmpty){
+                Text("No Location Found")
+                    .frame(maxWidth: .infinity,  maxHeight: .infinity, alignment: .center)
+                    .foregroundColor(Color(UIColor.secondaryLabel))
+            }else{
+                LocationList(viewModel:viewModel,isFiltered: !search.isEmpty, onRefresh: onRefresh)
+            }
+        }.frame(
+            maxWidth: .infinity,
+            maxHeight: .infinity,
+            alignment: .topLeading
+        )
+    }
+    
+    func onRefresh(){
+        search = ""
+        viewModel.getLocations()
     }
 }
 

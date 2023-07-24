@@ -30,8 +30,7 @@ class RecordsViewModel: ObservableObject {
         }
     }
     
-    
-    func getSeason(episodeName: String) -> Int {
+    func getSeasonNumber(episodeName: String) -> Int {
         let season = String(episodeName.prefix(3).dropFirst())
         return Int(season) ?? 0
     }
@@ -40,7 +39,7 @@ class RecordsViewModel: ObservableObject {
         var seasons: [Season] = []
         
         for item in episodes {
-            let season = self.getSeason(episodeName: item.episode)
+            let season = self.getSeasonNumber(episodeName: item.episode)
             
             if let existingSeasonIndex = seasons.firstIndex(where: { $0.id == season }) {
                 seasons[existingSeasonIndex].episodes.append(item)
@@ -62,8 +61,6 @@ class RecordsViewModel: ObservableObject {
             }
         }
     }
-
-    
     
     func getRecords(loadMore: Bool = false) {
         self.currentPage = loadMore ?  self.currentPage + 1 : 1

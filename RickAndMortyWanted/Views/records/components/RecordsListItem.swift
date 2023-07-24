@@ -29,14 +29,14 @@ struct RecordsListItem: View {
                     .lineLimit(1)
                     .foregroundColor(.white)
                     .fontWeight(.bold)
-                    .frame(width: 150, alignment: .leading)
+                    .frame(width: 135, alignment: .leading)
                 Text(record.air_date)
                     .font(.footnote)
                     .lineLimit(1)
                     .foregroundColor(.white)
                     .opacity(0.7)
-                    .frame(width: 150, alignment: .leading)
-            }.padding(30)
+                    .frame(width: 135, alignment: .leading)
+            }.padding(15)
         }
     }
 }

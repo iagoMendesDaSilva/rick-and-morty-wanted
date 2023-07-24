@@ -7,6 +7,10 @@
 
 import SwiftUI
 
+struct TabItem<Content: View> {
+    var view: Content
+}
+
 enum TabTitle: String {
     case RECORDS = "Records"
     case WANTED = "Wanted"
@@ -14,15 +18,27 @@ enum TabTitle: String {
 }
 
 struct ContentView: View {
+    
+    init() {
+        UITabBar.appearance().backgroundColor = UIColor.systemBackground
+    }
+    
     @State var selection = 2
+    
+    private let views = [
+        TabItem(view: AnyView(RecordsView().tabItem { Label(TabTitle.RECORDS.rawValue, systemImage:"tv.inset.filled") }.tag(1))),
+        TabItem(view: AnyView(WantedView().tabItem { Label(TabTitle.WANTED.rawValue, systemImage:"person.fill") }.tag(2))),
+        TabItem(view: AnyView(LocationsView().tabItem {  Label(TabTitle.LOCATIONS.rawValue, systemImage:"globe.americas.fill")}.tag(3))),
+    ]
+    
     
     private var navigationTitle: String {
         switch selection {
-        case 1:
+        case 0:
             return TabTitle.RECORDS.rawValue
-        case 2:
+        case 1:
             return TabTitle.WANTED.rawValue
-        case 3:
+        case 2:
             return TabTitle.LOCATIONS.rawValue
         default:
             return ""
@@ -32,21 +48,12 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             TabView(selection: $selection) {
-                RecordsView()
-                    .tabItem {
-                        Label(TabTitle.RECORDS.rawValue, systemImage:"tv.inset.filled")
-                    }.tag(1)
-                WantedView()
-                    .tabItem {
-                        Label(TabTitle.WANTED.rawValue, systemImage:"person.fill")
-                    }.tag(2)
-                LocationsView()
-                    .tabItem {
-                        Label(TabTitle.LOCATIONS.rawValue, systemImage:"globe.americas.fill")
-                    }.tag(3)
+                ForEach(views.indices, id: \.self) { index in
+                    views[index].view
+                }
             }
-            .navigationTitle(navigationTitle)
         }
+        .navigationTitle(navigationTitle)
     }
 }
 

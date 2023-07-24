@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SectionHeader: View {
+struct RecordSectionHeader: View {
     var season: Int
     
     init(season: Int) {
