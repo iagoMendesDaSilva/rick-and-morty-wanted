@@ -10,7 +10,7 @@ import SwiftUI
 struct LocationsView: View {
     
     @State private var search: String = ""
-    @ObservedObject var viewModel = LocationsViewModel()
+    @EnvironmentObject var viewModel: LocationsViewModel
     
     var body: some View {
         VStack{
@@ -34,11 +34,5 @@ struct LocationsView: View {
     func onRefresh(){
         search = ""
         viewModel.getLocations()
-    }
-}
-
-struct LocationsView_Previews: PreviewProvider {
-    static var previews: some View {
-        LocationsView()
     }
 }

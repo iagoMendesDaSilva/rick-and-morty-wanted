@@ -15,7 +15,6 @@ class LocationsViewModel: ObservableObject {
     private var currentPage = 1
     
     init() {
-        print(213)
         getLocations()
     }
     

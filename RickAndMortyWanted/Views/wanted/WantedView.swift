@@ -10,7 +10,7 @@ import SwiftUI
 struct WantedView: View {
     
     @State private var search: String = ""
-    @ObservedObject var viewModel = WantedViewModel()
+    @EnvironmentObject var viewModel: WantedViewModel
     
     var body: some View {
         VStack{
@@ -36,10 +36,4 @@ struct WantedView: View {
         viewModel.getCharacters()
     }
     
-}
-
-struct WantedView_Previews: PreviewProvider {
-    static var previews: some View {
-        WantedView()
-    }
 }

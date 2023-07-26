@@ -10,7 +10,7 @@ import SwiftUI
 struct RecordsView: View {
     
     @State private var search: String = ""
-    @ObservedObject var viewModel = RecordsViewModel()
+    @EnvironmentObject var viewModel: RecordsViewModel
     
     var body: some View {
         VStack{
@@ -37,8 +37,3 @@ struct RecordsView: View {
     }
 }
 
-struct RecordsView_Previews: PreviewProvider {
-    static var previews: some View {
-        RecordsView()
-    }
-}

@@ -25,13 +25,6 @@ struct ContentView: View {
     
     @State var selection = 2
     
-    private let views = [
-        TabItem(view: AnyView(RecordsView().tabItem { Label(TabTitle.RECORDS.rawValue, systemImage:"tv.inset.filled") }.tag(1))),
-        TabItem(view: AnyView(WantedView().tabItem { Label(TabTitle.WANTED.rawValue, systemImage:"person.fill") }.tag(2))),
-        TabItem(view: AnyView(LocationsView().tabItem {  Label(TabTitle.LOCATIONS.rawValue, systemImage:"globe.americas.fill")}.tag(3))),
-    ]
-    
-    
     private var navigationTitle: String {
         switch selection {
         case 0:
@@ -48,10 +41,21 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             TabView(selection: $selection) {
-                ForEach(views.indices, id: \.self) { index in
-                    views[index].view
-                }
-            }
+                RecordsView()
+                    .tabItem {
+                        Label(TabTitle.RECORDS.rawValue, systemImage:"tv.inset.filled")
+                    }.tag(1)
+                WantedView()
+                    .tabItem {
+                        Label(TabTitle.WANTED.rawValue, systemImage:"person.fill") }
+                    .tag(2)
+                LocationsView()
+                    .tabItem {
+                        Label(TabTitle.LOCATIONS.rawValue, systemImage:"globe.americas.fill")}
+                    .tag(3)
+            }.environmentObject(Di.recordsViewModel)
+                .environmentObject(Di.wantedViewModel)
+                .environmentObject(Di.locationsViewModel)
         }
         .navigationTitle(navigationTitle)
     }
