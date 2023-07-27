@@ -46,4 +46,12 @@ struct ColorService {
             }
         return randomGradients
     }
+    
+   static func gradientByDimensionType(locationType: String) -> LinearGradient {
+        guard let type = DimensionType(rawValue: locationType) else {
+            return gradients[0]
+        }
+        let index = type.rawValue.hashValue % ColorService.gradients.count
+        return index >= 0 ? gradients[index] : gradients[-index]
+    }
 }

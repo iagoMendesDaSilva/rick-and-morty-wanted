@@ -13,9 +13,13 @@ final class Api {
         static let baseUrl = "https://rickandmortyapi.com/api/"
     }
     
-    static func request<T: Codable>(endpoint: Endpoints, type: T.Type, queryParameters: [URLQueryItem] = [], completion: @escaping (Result<T, Error>) -> Void) {
+    static func request<T: Codable>(endpoint: Endpoints, type: T.Type, queryParameters: [URLQueryItem] = [], pathParam: String = "", completion: @escaping (Result<T, Error>) -> Void) {
         
         var urlEndpoint = Constants.baseUrl.appending(endpoint.rawValue)
+        
+        if(!pathParam.isEmpty){
+            urlEndpoint.append("/" + pathParam)
+        }
         
         if !queryParameters.isEmpty {
             urlEndpoint += "?"
@@ -23,7 +27,7 @@ final class Api {
                 guard let value = $0.value else { return nil }
                 return "\($0.name)=\(value)"
             }).joined(separator: "&")
-
+            
             urlEndpoint += argumentString
         }
         

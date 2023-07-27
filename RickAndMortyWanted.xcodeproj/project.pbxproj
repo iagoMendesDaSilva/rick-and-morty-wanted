@@ -24,6 +24,8 @@
 		1728B37E2A4E05C70094F1F8 /* ResponseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1728B37D2A4E05C70094F1F8 /* ResponseList.swift */; };
 		17580D4E2A70904300153B88 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17580D4D2A70904300153B88 /* Images.xcassets */; };
 		1763F5DC2A717EAB00C88F5E /* Di.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1763F5DB2A717EAB00C88F5E /* Di.swift */; };
+		1763F5DF2A718DC700C88F5E /* WantedDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1763F5DE2A718DC700C88F5E /* WantedDetail.swift */; };
+		1763F5E12A719C4A00C88F5E /* WantedDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1763F5E02A719C4A00C88F5E /* WantedDetailViewModel.swift */; };
 		177658EE2A4A149F0072C367 /* RickAndMortyWantedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177658ED2A4A149F0072C367 /* RickAndMortyWantedApp.swift */; };
 		177658F02A4A149F0072C367 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177658EF2A4A149F0072C367 /* ContentView.swift */; };
 		177658F22A4A14AF0072C367 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 177658F12A4A14AF0072C367 /* Assets.xcassets */; };
@@ -44,6 +46,7 @@
 		17D365A72A6C18D100F239F0 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D365A62A6C18D100F239F0 /* Search.swift */; };
 		17D365AA2A6C1FBF00F239F0 /* RecordsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D365A92A6C1FBF00F239F0 /* RecordsList.swift */; };
 		17D365AC2A6C461A00F239F0 /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D365AB2A6C461A00F239F0 /* Season.swift */; };
+		17EFC9AB2A73154000B7B829 /* LocationDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EFC9AA2A73154000B7B829 /* LocationDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +84,8 @@
 		1728B37D2A4E05C70094F1F8 /* ResponseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseList.swift; sourceTree = "<group>"; };
 		17580D4D2A70904300153B88 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1763F5DB2A717EAB00C88F5E /* Di.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Di.swift; sourceTree = "<group>"; };
+		1763F5DE2A718DC700C88F5E /* WantedDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WantedDetail.swift; sourceTree = "<group>"; };
+		1763F5E02A719C4A00C88F5E /* WantedDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WantedDetailViewModel.swift; sourceTree = "<group>"; };
 		177658EA2A4A149E0072C367 /* RickAndMortyWanted.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMortyWanted.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		177658ED2A4A149F0072C367 /* RickAndMortyWantedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyWantedApp.swift; sourceTree = "<group>"; };
 		177658EF2A4A149F0072C367 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -104,6 +109,7 @@
 		17D365A62A6C18D100F239F0 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		17D365A92A6C1FBF00F239F0 /* RecordsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsList.swift; sourceTree = "<group>"; };
 		17D365AB2A6C461A00F239F0 /* Season.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Season.swift; sourceTree = "<group>"; };
+		17EFC9AA2A73154000B7B829 /* LocationDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +150,7 @@
 		1728B35B2A4DF70B0094F1F8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1763F5DD2A718DB400C88F5E /* wantedDetail */,
 				17919E732A59DDE300C5EE60 /* records */,
 				17919E722A59DDC800C5EE60 /* locations */,
 				17919E712A59DDBB00C5EE60 /* wanted */,
@@ -156,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				1728B3632A4DFA510094F1F8 /* WantedViewModel.swift */,
+				1763F5E02A719C4A00C88F5E /* WantedDetailViewModel.swift */,
 				17D365A42A6C16B200F239F0 /* RecordsViewModel.swift */,
 				17A860752A6EA97D0088ABC2 /* LocationsViewModel.swift */,
 			);
@@ -195,6 +203,15 @@
 				1763F5DB2A717EAB00C88F5E /* Di.swift */,
 			);
 			path = di;
+			sourceTree = "<group>";
+		};
+		1763F5DD2A718DB400C88F5E /* wantedDetail */ = {
+			isa = PBXGroup;
+			children = (
+				17EFC9A92A73152D00B7B829 /* components */,
+				1763F5DE2A718DC700C88F5E /* WantedDetail.swift */,
+			);
+			path = wantedDetail;
 			sourceTree = "<group>";
 		};
 		177658E12A4A149E0072C367 = {
@@ -301,6 +318,14 @@
 				17A8607B2A6EADFA0088ABC2 /* LocationList.swift */,
 				17A8607D2A6EAE0A0088ABC2 /* LocationListItem.swift */,
 				17A8607F2A6EAE190088ABC2 /* LocationSectionHeader.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		17EFC9A92A73152D00B7B829 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				17EFC9AA2A73154000B7B829 /* LocationDetail.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -439,6 +464,7 @@
 				1728B35D2A4DF7280094F1F8 /* LocationsView.swift in Sources */,
 				17A860742A6EA7F00088ABC2 /* Colors.swift in Sources */,
 				1728B3642A4DFA510094F1F8 /* WantedViewModel.swift in Sources */,
+				1763F5DF2A718DC700C88F5E /* WantedDetail.swift in Sources */,
 				1728B35F2A4DF73C0094F1F8 /* WantedView.swift in Sources */,
 				17D365A52A6C16B200F239F0 /* RecordsViewModel.swift in Sources */,
 				1727CD4F2A6D570B00140FCF /* SectionHeader.swift in Sources */,
@@ -448,6 +474,7 @@
 				1728B3712A4DFDFF0094F1F8 /* Episode.swift in Sources */,
 				1728B3752A4DFE430094F1F8 /* CharacterLocation.swift in Sources */,
 				1728B37A2A4E00AC0094F1F8 /* Api.swift in Sources */,
+				17EFC9AB2A73154000B7B829 /* LocationDetail.swift in Sources */,
 				177658EE2A4A149F0072C367 /* RickAndMortyWantedApp.swift in Sources */,
 				1728B36F2A4DFDBF0094F1F8 /* CharacterStatus.swift in Sources */,
 				17A860822A6F07CC0088ABC2 /* DimensionType.swift in Sources */,
@@ -460,6 +487,7 @@
 				1728B37E2A4E05C70094F1F8 /* ResponseList.swift in Sources */,
 				1728B3732A4DFE290094F1F8 /* Location.swift in Sources */,
 				17A860802A6EAE190088ABC2 /* LocationSectionHeader.swift in Sources */,
+				1763F5E12A719C4A00C88F5E /* WantedDetailViewModel.swift in Sources */,
 				17D365AA2A6C1FBF00F239F0 /* RecordsList.swift in Sources */,
 				17D365AC2A6C461A00F239F0 /* Season.swift in Sources */,
 				17A860782A6EAAC10088ABC2 /* Dimension.swift in Sources */,
@@ -628,11 +656,12 @@
 				DEVELOPMENT_ASSET_PATHS = "\"RickAndMortyWanted/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Rick and Morty: Wanted";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -640,9 +669,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.iago.RickAndMortyWanted;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -657,11 +689,12 @@
 				DEVELOPMENT_ASSET_PATHS = "\"RickAndMortyWanted/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Rick and Morty: Wanted";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -669,9 +702,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.iago.RickAndMortyWanted;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

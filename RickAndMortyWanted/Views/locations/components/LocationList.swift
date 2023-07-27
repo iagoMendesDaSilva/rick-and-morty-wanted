@@ -24,14 +24,6 @@ struct LocationList: View {
         }
     }
     
-    func gradientIndex( locationType: String) -> Int {
-        guard let type = DimensionType(rawValue: locationType) else {
-            return 0
-        }
-        let index = type.rawValue.hashValue % ColorService.gradients.count
-        return index >= 0 ? index : -index
-    }
-    
     var body: some View {
         let locations = isFiltered ? viewModel.locationsFiltered : viewModel.locations
         List(locations.indices, id: \.self) { index in
@@ -42,7 +34,7 @@ struct LocationList: View {
                             if(!viewModel.locations.isEmpty){
                                 ForEach(locations[index].locations.indices, id: \.self) { indexLocation in
                                     let item = locations[index].locations[indexLocation]
-                                    LocationListItem(location: item, gradient: ColorService.gradients[gradientIndex(locationType: item.type)])
+                                    LocationListItem(location: item, gradient: ColorService.gradientByDimensionType(locationType: item.type))
                                 }
                             }
                         }.frame(height: 200)

@@ -14,8 +14,8 @@
             filePath = "RickAndMortyWanted/Views/locations/components/LocationList.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
@@ -62,10 +62,74 @@
             filePath = "RickAndMortyWanted/Views/locations/components/LocationList.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
             landmarkName = "body"
             landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DEC00274-2DB6-4C2E-827E-FB694F7157D0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RickAndMortyWanted/ViewModels/WantedDetailViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "getLocationInfo(url:origin:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "26615F18-0110-4C91-A3CA-11D414FCA5A9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RickAndMortyWanted/ViewModels/WantedDetailViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "getLocationInfo(url:origin:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "26615F18-0110-4C91-A3CA-11D414FCA5A9 - 38bc81a7d86624f6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RickAndMortyWanted.WantedDetailViewModel.getLocationInfo(url: Swift.String, origin: Swift.Bool) -&gt; ()"
+                  moduleName = "RickAndMortyWanted"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iago/Documents/RickAndMortyWanted/RickAndMortyWanted/ViewModels/WantedDetailViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "94">
+               </Location>
+               <Location
+                  uuid = "26615F18-0110-4C91-A3CA-11D414FCA5A9 - 7ab21ca7e5ed442a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;RickAndMortyWanted.Location, Swift.Error&gt;) -&gt; () in RickAndMortyWanted.WantedDetailViewModel.getLocationInfo(url: Swift.String, origin: Swift.Bool) -&gt; ()"
+                  moduleName = "RickAndMortyWanted"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/iago/Documents/RickAndMortyWanted/RickAndMortyWanted/ViewModels/WantedDetailViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "697">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
