@@ -1,0 +1,65 @@
+/*
+  Localizable.strings
+  RickAndMortyWanted
+
+  Created by Iago on 28/07/23.
+  
+*/
+
+"Records" = "Registros";
+"Wanted" = "Procurados";
+"Locations"= "Localizações";
+"Search Wanted" = "Buscar Procurado";
+"No Wanted Found" = "Procurado não Encontrado";
+"Search Locations" = "Buscar Localização";
+"No Location Found" = "Localização não Encontrada";
+"Search Records" = "Buscar Registro";
+"No Record Found" = "Registro não Encontrado";
+"Season" = "Temporada";
+"Last Seen" = "Última vez visto";
+"Origin" = "Origem";
+"Planet" = "Planeta";
+"Cluster" = "Aglomerado";
+"Space station" = "Estação espacial";
+"Microverse" = "Microverso";
+"TV" = "TV";
+"Resort" = "Resort";
+"Fantasy town" = "Cidade Fantasia";
+"Dream" = "Sonho";
+"Dimension" = "Dimensão";
+"unknown" = "Desconhecido";
+"Menagerie" = "Mansão de animais exóticos";
+"Game" = "Jogo";
+"Customs" = "Aduana";
+"Daycare" = "Creche";
+"Dwarf planet (Celestial Dwarf)" = "Planeta anão (anão celestial)";
+"Miniverse" = "Miniverso";
+"Teenyverse" = "Microverso";
+"Box" = "Caixa";
+"Spacecraft" = "Nave espacial";
+"Artificially generated world" = "Mundo gerado artificialmente";
+"Machine" = "Máquina";
+"Arcade" = "Fliperama";
+"Spa" = "Spa";
+"Quadrant" = "Quadrante";
+"Quasar" = "Quasar";
+"Mount" = "Monte";
+"Liquid" = "Líquido";
+"Convention" = "Convenção";
+"Woods" = "Floresta";
+"Diegesis" = "Diegese";
+"Non-Diegetic Alternative Reality" = "Realidade alternativa não-diegética";
+"Nightmare" = "Pesadelo";
+"Asteroid" = "Asteroide";
+"Acid Plant" = "Planta de Ácido";
+"Reality" = "Realidade";
+"Death Star" = "Estrela da Morte";
+"Base" = "Base";
+"Elemental Rings" = "Anéis Elementais";
+"Human" = "Humano";
+"Space" = "Espaço";
+"Hell" = "Inferno";
+"Police Department" = "Delegacia de Polícia";
+"Country" = "País";
+"Consciousness" = "Consciência";
+"Memory" = "Memória";

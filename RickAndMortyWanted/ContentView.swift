@@ -11,7 +11,7 @@ struct TabItem<Content: View> {
     var view: Content
 }
 
-enum TabTitle: String {
+enum TabTitle: LocalizedStringKey {
     case RECORDS = "Records"
     case WANTED = "Wanted"
     case LOCATIONS = "Locations"
@@ -25,7 +25,7 @@ struct ContentView: View {
     
     @State var selection = 2
     
-    private var navigationTitle: String {
+    private var navigationTitle: LocalizedStringKey {
         switch selection {
         case 0:
             return TabTitle.RECORDS.rawValue

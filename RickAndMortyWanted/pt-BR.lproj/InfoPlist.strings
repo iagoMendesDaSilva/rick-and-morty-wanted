@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  RickAndMortyWanted
+
+  Created by Iago on 28/07/23.
+  
+*/
+
+"CFBundleName" = "Rick and Morty: Procurados";
+"CFBundleDisplayName"= "Rick and Morty: Procurados";

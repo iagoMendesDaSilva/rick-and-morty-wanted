@@ -32,7 +32,7 @@ struct LocationListItem: View {
                         .foregroundColor(.white)
                         .fontWeight(.bold)
                         .frame(width: 150, alignment: .leading)
-                    Text(location.type.prefix(1).capitalized + location.type.dropFirst())
+                    Text(LocalizedStringKey(location.type))
                         .font(.footnote)
                         .lineLimit(1)
                         .foregroundColor(.white)

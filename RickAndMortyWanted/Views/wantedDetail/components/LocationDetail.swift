@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct LocationDetail: View {
-    var title: String
+    var title: LocalizedStringKey
     var location: Location
     
-    init(title: String, location: Location) {
+    init(title: LocalizedStringKey, location: Location) {
         self.title = title
         self.location = location
     }
@@ -35,7 +35,7 @@ struct LocationDetail: View {
                                 .foregroundColor(.white)
                                 .fontWeight(.bold)
                                 .frame(width: sizeItem-50, alignment: .leading)
-                            Text(location.type.prefix(1).capitalized + location.type.dropFirst())
+                            Text(LocalizedStringKey(location.type))
                                 .font(.footnote)
                                 .lineLimit(1)
                                 .foregroundColor(.white)

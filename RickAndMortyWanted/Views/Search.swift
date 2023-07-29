@@ -9,12 +9,12 @@ import SwiftUI
 
 struct Search: View {
     
-    var placeHolder: String
+    var placeHolder: LocalizedStringKey
     @Binding var search: String
     var onPress: (_: String) -> Void
   
     
-    init(placeHolder: String,search: Binding<String>, onPress: @escaping (_: String) -> Void) {
+    init(placeHolder: LocalizedStringKey,search: Binding<String>, onPress: @escaping (_: String) -> Void) {
         self.placeHolder = placeHolder
         self.onPress = onPress
         self._search = search

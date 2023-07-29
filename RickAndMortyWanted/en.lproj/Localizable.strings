@@ -1,0 +1,66 @@
+/* 
+  Localizable.strings
+  RickAndMortyWanted
+
+  Created by Iago on 28/07/23.
+  
+*/
+
+"Records" = "Records";
+"Wanted" = "Wanted";
+"Locations"= "Locations";
+"Search Wanted" = "Search Wanted";
+"No Wanted Found" = "No Wanted Found";
+"Search Locations" = "Search Locations";
+"No Location Found" = "No Location Found";
+"Search Records" = "Search Records";
+"No Record Found" = "No Record Found";
+"Season" = "Season";
+"Last Seen" = "Last Seen";
+"Origin" = "Origin";
+"Planet" = "Planet";
+"Cluster" = "Cluster";
+"Space station" = "Space station";
+"Microverse" = "Microverse";
+"TV" = "TV";
+"Resort" = "Resort";
+"Fantasy town" = "Fantasy town";
+"Dream" = "Dream";
+"Dimension" = "Dimension";
+"unknown" = "Unknown";
+"Menagerie" = "Menagerie";
+"Game" = "Game";
+"Customs" = "Customs";
+"Daycare" = "Daycare";
+"Dwarf planet (Celestial Dwarf)" = "Dwarf planet (Celestial Dwarf)";
+"Miniverse" = "Miniverse";
+"Teenyverse" = "Teenyverse";
+"Box" = "Box";
+"Spacecraft" = "Spacecraft";
+"Artificially generated world" = "Artificially generated world";
+"Machine" = "Machine";
+"Arcade" = "Arcade";
+"Spa" = "Spa";
+"Quadrant" = "Quadrant";
+"Quasar" = "Quasar";
+"Mount" = "Mount";
+"Liquid" = "Liquid";
+"Convention" = "Convention";
+"Woods" = "Woods";
+"Diegesis" = "Diegesis";
+"Non-Diegetic Alternative Reality" = "Non-Diegetic Alternative Reality";
+"Nightmare" = "Nightmare";
+"Asteroid" = "Asteroid";
+"Acid Plant" = "Acid Plant";
+"Reality" = "Reality";
+"Death Star" = "Death Star";
+"Base" = "Base";
+"Elemental Rings" = "Elemental Rings";
+"Human" = "Human";
+"Space" = "Space";
+"Hell" = "Hell";
+"Police Department" = "Police Department";
+"Country" = "Country";
+"Consciousness" = "Consciousness";
+"Memory" = "Memory";
+
